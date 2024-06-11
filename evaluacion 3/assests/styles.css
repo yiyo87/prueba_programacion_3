@@ -2,6 +2,11 @@ body{
     background-color:cadetblue;
 }
 
+#caja{
+    background-color:cornsilk;
+    width: 40%;
+}
+
 #seccionFormulario{
 
     background-color: rgb(208, 221, 237);

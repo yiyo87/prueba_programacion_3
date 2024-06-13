@@ -64,3 +64,11 @@ h1{
     margin: auto;
     text-align: center;
 }
+
+.cambioFuente {
+    font-size: 30px;
+}
+
+.cambioFuente2 {
+    font-size: 50px;
+}

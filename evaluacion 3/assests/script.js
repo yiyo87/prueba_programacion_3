@@ -15,21 +15,21 @@ function cambiarContraste(){
     console.log(inputs)
     
     //console.log(fondo);
-    if(fondo == "black"){
-        eBody.style.backgroundColor = "cadetblue";
+    if(fondo == "white"){
+        eBody.style.backgroundColor = "black";
         for (let index = 0; index < eH1.length; index++) {
             const element = eH1[index];
-            element.style.color = "cadetblue";
+            element.style.color = "white";
         }
 
         for (let index = 0; index < inputs.length; index++) {
             const element = inputs[index];
-            element.style.borderColor = "purple";
+            element.style.borderColor = "white";
         }
         //eH1[0].style.color = "purple";
         //eH1[1].style.color = "purple";
     }else{
-        eBody.style.backgroundColor = "black";
+        eBody.style.backgroundColor = "white";
         for (let index = 0; index < eH1.length; index++) {
             const element = eH1[index];
             element.style.color = "black";

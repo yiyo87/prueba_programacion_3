@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="module" src="./assests/firebase.js"></script>
     <script type="module" src="./assests/script.js"></script>
-    <link rel="stylesheet" href="./assests/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assests/styles.css" />
+  </head>
+  <body>
     <div id="caja">
-        <h1 id="titulo" class="titulo">Formulario de Contacto</h1>
-        <div id="contrasteFuente">
-            <button id="btnContraste" class="btnContraste" onclick="cambiarContraste()">Contraste</button>
-            <button id="btnFuente" class="btnFuente" onclick="cambiarFuenteTamano()">Fuente</button>
-        </div>
-        <form id="formulario" action="">
-            <label for="">Nombre</label>
-                <input type="text" id="nombre" placeholder="nombre">
-            <label for="">Apellido</label>
-                <input type="text" id="apellido" placeholder="apellido">
-            <label for="">Edad</label>
-                <input type="text" id="edad" placeholder="edad">
-            <label for="">Correo</label>
-                <input type="email" id="email" placeholder="correo">
-            <label for="">Numero</label>
-            <input type="text" id="numero" placeholder="numero">
-            <label for="">Genero</label>
-            <select name="opciones" id="opciones">
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-            </select>
-            <label for="">Comentario</label>
-            <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
-            <label for="">Termino y Condiciones</label>
-                <input type="checkbox">
-            <button id="btnRegistrar">Registrar</button>
-        </form>
-        <table>
-            <thead>
-                <tr id="tabla">
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Edad</th>
-                    <th>Numero</th>
-                    <th>Genero</th>
-                    <th>Correo</th>
-                </tr>
-            </thead>
-            <tbody id="cuerpoTabla">
-
-            </tbody>
-        </table>
-            <h1>Actualizar</h1>
-                <input type="text" id="UPDnombre" placeholder="nombre">
-                <input type="text" id="UPDapellido" placeholder="apellido">
-                <input type="text" id="UPDedad" placeholder="edad">
-                <input type="text" id="UPDnumero" placeholder="numero">
-                <input type="text" id="UPDgenero" placeholder="genero">
-                <input type="text" id="UPDcorreo" placeholder="correo">
-                <button id="btnActualizar">Actualizar</button>
+      <h1 id="titulo" class="titulo">Formulario de Contacto</h1>
+      <div id="contrasteFuente">
+        <button
+          id="btnContraste"
+          class="btnContraste"
+          onclick="cambiarContraste()"
+        >
+          Contraste
+        </button>
+        <button
+          id="btnFuente"
+          class="btnFuente"
+          onclick="cambiarFuenteTamano()"
+        >
+          Fuente
+        </button>
+      </div>
+      <form id="formulario" action="">
+        <label class="label" id="label" for="">Nombre</label>
+        <input type="text" id="nombre" placeholder="nombre" />
+        <p class="noDisplay" id="pnombre">Debes ingresar un nombre</p>
+        <label class="label" id="label" for="">Apellido</label>
+        <input type="text" id="apellido" placeholder="apellido" />
+        <p class="noDisplay" id="papellido">Debes ingresar un apellido</p>
+        <label class="label" id="label" for="">Edad</label>
+        <input type="text" id="edad" placeholder="edad" />
+        <p class="noDisplay" id="pedad">Debes ingresar tu edad</p>
+        <label class="label" id="label" for="">Correo</label>
+        <input type="email" id="email" placeholder="correo" />
+        <p class="noDisplay" id="pemail">Debes ingresar tu correo</p>
+        <label class="label" id="label" for="">Telefono</label>
+        <input type="text" id="telefono" placeholder="telefono" />
+        <p class="noDisplay" id="ptelefono">Debes ingresar tu correo</p>
+        <label class="label" id="label" for="">Genero</label>
+        <p class="noDisplay" id="pgenero">Debes ingresar tu genero</p>
+        <select name="opciones" id="opciones">
+            <option value="">Selecciona un valor</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+        </select>
+        <p class="noDisplay" id="popciones">Debes ingresar una opcion</p>
+        <label class="label" id="label" for="">Comentario</label>
+        <textarea
+          name="comentario"
+          id="comentario"
+          placeholder="Escribe tu comentario"
+        ></textarea>
+        <p class="noDisplay" id="pcomentario">Debes ingresar un comentario</p>
+        <label class="label" id="label" for="">Termino y Condiciones</label>
+        <input type="checkbox" id="check" />
+        <p class="noDisplay" id="pcheck">Debes Aceptar los terminos y condiciones</p>
+        <button id="btnRegistrar">Registrar</button>
+      </form>
+      <table>
+        <thead>
+          <tr id="tabla">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Telefono</th>
+            <th>Genero</th>
+            <th>Correo</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+      </table>
+      <h1>Actualizar</h1>
+      <input type="text" id="UPDnombre" placeholder="nombre" />
+      <input type="text" id="UPDapellido" placeholder="apellido" />
+      <input type="text" id="UPDedad" placeholder="edad" />
+      <input type="text" id="UPDtelefono" placeholder="telefono" />
+      <input type="text" id="UPDgenero" placeholder="genero" />
+      <input type="text" id="UPDcorreo" placeholder="correo" />
+      <button id="btnActualizar">Actualizar</button>
     </div>
-</body>
+  </body>
 </html>

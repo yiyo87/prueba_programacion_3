@@ -1,79 +1,159 @@
 body {
-  background-color: cadetblue;
-  width: 80%;
-  margin: auto;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+    background-color: cadetblue;
+    width: 80%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .caja {
+    background-color: darkseagreen;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-style: solid;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 0 30px black;
+  }
+  .containerForm{
+    border: 1px solid white;
+  }
+  .formulario input{
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .noDisplay{
+    display: block;
+    margin: auto;
+  }
+  .formulario select{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+  }
+  
+  .formulario label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .formulario textarea {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+  }
+  .formulario button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .formulario button:hover{
+    background-color: green;
+    color: white;
+  }
+  .containerTabla{
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .containerTabla th, td{
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+  }
+  .actualizarTabla{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .actualizarTabla select{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 30px
+  }
+  .actualizarTabla label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 6px;
+  
+  }
+  .actualizarTabla input{
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 10px;
+  
+  }
+  .botonActualizar{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
 
-#caja {
-  background-color: darkseagreen;
-  width: 30%;
-  height: 950px;
-  margin-top: 9%;
-  margin-left: 30%;
-  border-style: solid;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 0 30px black;
-}
-
-input {
-  display: block;
-  margin-top: 10px;
-  margin: auto;
-}
-
-label {
-  margin-left: 190px;
-}
-
-#opciones {
-  display: block;
-  margin: auto;
-}
-
-textarea {
-  display: block;
-  margin: auto;
-}
-tr {
-  display: block;
-  margin-left: 20%;
-}
-
-.btnContraste,
-.btnFuente {
-  display: block;
-  margin-left: 35%;
-  background-color: white;
-  color: black;
-  width: 30%;
-}
-
-button {
-  display: block;
-  margin: 10px auto;
-}
-
-h1 {
-  margin: auto;
-  text-align: center;
-}
-
-.cambioFuente {
-  font-size: 1.5em;
-}
-
-.cambioFuente2 {
-  font-size: 2em;
-}
-
-.cambioTamanoFormulario {
-  width: 100%;
-  max-width: 600px;
-}
-
-p.noDisplay{
-    display: none;
-}
+  }
+  .botonActualizar:hover{
+    background-color: green;
+    color: white;
+  }
+  #opciones {
+    display: block;
+    margin: auto;
+  }
+  
+  textarea {
+    display: block;
+    margin: auto;
+  }
+  
+  .btnContraste,
+  .btnFuente {
+    display: block;
+    margin-left: 35%;
+    background-color: white;
+    color: black;
+    width: 30%;
+  }
+  
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  h1 {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cambioFuente {
+    font-size: 1.5em;
+  }
+  
+  .cambioFuente2 {
+    font-size: 2em;
+  }
+  
+  .cambioTamanoFormulario {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  p.noDisplay{
+      display: none;
+  }
